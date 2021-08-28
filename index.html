@@ -2,24 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My Developer Portofolio Website">
+    <meta name="keywords" content="portofolio, developer, website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="author" content="Samuel Reka">
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
-    <title>Sampixel's Dev-Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <title>Sam-Dev-Portfolio</title>
 </head>
-<body>
-    <section class="inner-content">
-        <ul class="inner-list">
-            <li class="inner-item">
-                <a class="inner-link" href="#Games">Games</a>
-            </li>
-            <li class="inner-item">
-                <a class="inner-link" href="#Tools">Tools</a>
-            </li>
-        </ul>
-        <img class="cover-image" src="./images/cover.png" />
-        <span class="cover-text">SAMPIXEL</span>
-    </section>
+<body class="main">
+    <section id="#" class="head">
+        <div class="head-title">
+            <span class="head-title-item"><span class="head-title-light">Hi,</span> i am Samuel</span>
+            <br />
+            <span class="head-title-desc">...and i Love Programming!</span>
+            <div class="head-title-actions">
+                <ul class="head-title-list">
+                    <li class="head-title-item">
+                        <a class="head-title-anchor" href="#games">Games</a>
+                    </li>
+                    <li class="head-title-item">
+                        <a class="head-title-anchor" href="#videos">Videos</a>
+                    </li>
+                    <li class="head-title-item">
+                        <a class="head-title-anchor" href="#about">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- end head-title -->
+        <div class="head-cover">
+            <picture>
+                <source class="head-cover-image" type="image/webp" srcset="./images/cover.webp" />
+                <img class="head-cover-image" src="./images/cover.png" alt="My Portfolio Picture" title="My Portfolio Picture" />
+            </picture>
+        </div><!-- end head-cover -->
+    </section><!-- end section head -->
     <script type="text/javascript" src="./scripts/index.js"></script>
 </body>
 </html>

@@ -1,54 +1,108 @@
-body {
+@font-face {
+    font-family: Leage Spartan;
+    src: url("../fonts/LeagueSpartan-Bold.otf") format("truetype");
+}
+
+:root {
+    --dev-black: #141414;
+    --dev-purple: #9400ff;
+    --dev-grey-dark: #50505031;
+    --dev-grey-light: #8a8a8a2c;
+    --dev-green-light: #00ff80b4;
+}
+
+::selection {
+    color: #000;
+    background-color: var(--dev-purple);
+}
+
+body.main {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Leage Spartan;
+    background-color: #000;
 }
 
-section.inner-content {
+section.head {
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vh;
+    max-height: 100vh;
+}
+
+div.head-title {
+    position: relative;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    text-align: end;
+    z-index: 1;
+    display: grid;
+    align-content: center;
+}
+
+span.head-title-light {
+    color: #000;
+    background-color: var(--dev-purple);
+}
+
+span.head-title-item,
+span.head-title-desc {
+    position: relative;
+    color: #fff;
+}
+
+span.head-title-item {
+    font-size: 100pt;
+    border-bottom-width: 0%;
+}
+
+span.head-title-desc {
+    font-size: 50pt;
+}
+
+div.head-cover {
+    position: relative;
+}
+
+source.head-cover-image,
+img.head-cover-image {
+    object-fit: cover;
+    position: relative;
+}
+
+div.head-title-actions {
     display: block;
 }
 
-ul.inner-list,
-img.cover-image,
-span.cover-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-ul.inner-list {
-    text-align: left;
-}
-
-li.inner-item {
+ul.head-title-list {
+    display: flex;
+    justify-content: space-around;
     list-style-type: none;
 }
 
-a.inner-link {
-    text-decoration: none;
+li.head-title-item {
     color: #fff;
-    font-size: 25pt;
+    border: 2px solid var(--dev-purple);
+    padding: 15px 30px;
+    font-size: 18pt;
+    transition: background-color 0.3s ease-in-out;
 }
 
-a.inner-link:hover {
+li.head-title-item:hover {
+    background-color: var(--dev-purple);
+}
+
+a.head-title-anchor {
     text-decoration: none;
+    color: #fff;
+}
+
+a.head-title-anchor:hover {
+    text-decoration: none;
+    color: #000;
     cursor: pointer;
-}
-
-img.cover-image {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
-
-span.cover-text {
-    width: 45vw;
-    height: 14vh;
-    left: calc(50% - 22.5vw);
-    top: calc(50% - 7vh);
-    color: #fff;
-    font-size: 100pt;
 }
