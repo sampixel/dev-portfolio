@@ -24,13 +24,21 @@ body.main {
     background-color: #000;
 }
 
-section.head {
+section.head,
+section.game,
+section.video,
+section.skill,
+section.about {
     display: flex;
     justify-content: center;
-    min-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    /*min-width: 100vw;
     min-height: 100vh;
     max-width: 100vh;
-    max-height: 100vh;
+    max-height: 100vh;*/
 }
 
 div.head-title {
@@ -70,7 +78,6 @@ div.head-cover {
 
 source.head-cover-image,
 img.head-cover-image {
-    object-fit: cover;
     position: relative;
 }
 
@@ -89,7 +96,7 @@ li.head-title-item {
     border: 2px solid var(--dev-purple);
     padding: 15px 30px;
     font-size: 18pt;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 li.head-title-item:hover {
